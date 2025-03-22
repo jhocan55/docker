@@ -1,0 +1,273 @@
+
+Test Authentication:
+User: alice
+Expected: 200, Got: 200
+Result: SUCCESS
+
+Test Authentication:
+User: bob
+Expected: 200, Got: 200
+Result: SUCCESS
+
+Test Authentication:
+User: clementine
+Expected: 403, Got: 403
+Result: SUCCESS
+
+============================
+    Authorization test
+============================
+
+Request done at "/v1"
+| username="alice"
+| password="wonderland"
+
+Expected result = 200
+Actual result   = 200
+
+==>  SUCCESS
+
+
+============================
+    Authorization test
+============================
+
+Request done at "/v2"
+| username="alice"
+| password="wonderland"
+
+Expected result = 200
+Actual result   = 200
+
+==>  SUCCESS
+
+
+============================
+    Authorization test
+============================
+
+Request done at "/v1"
+| username="bob"
+| password="builder"
+
+Expected result = 200
+Actual result   = 200
+
+==>  SUCCESS
+
+
+============================
+    Authorization test
+============================
+
+Request done at "/v2"
+| username="bob"
+| password="builder"
+
+Expected result = 403
+Actual result   = 403
+
+==>  SUCCESS
+
+
+Test Content:
+Version: v1, Sentence: 'life is beautiful'
+Expected sentiment: positive, Got score: 0.5994
+Result: SUCCESS
+
+Test Content:
+Version: v1, Sentence: 'that sucks'
+Expected sentiment: negative, Got score: -0.3612
+Result: SUCCESS
+
+Test Content:
+Version: v2, Sentence: 'life is beautiful'
+Expected sentiment: positive, Got score: 0.5994
+Result: SUCCESS
+
+Test Content:
+Version: v2, Sentence: 'that sucks'
+Expected sentiment: negative, Got score: -0.3612
+Result: SUCCESS
+
+Test Authentication:
+User: alice
+Expected: 200, Got: 200
+Result: SUCCESS
+
+Test Authentication:
+User: bob
+Expected: 200, Got: 200
+Result: SUCCESS
+
+Test Authentication:
+User: clementine
+Expected: 403, Got: 403
+Result: SUCCESS
+
+============================
+    Authorization test
+============================
+
+Request done at "/v1"
+| username="alice"
+| password="wonderland"
+
+Expected result = 200
+Actual result   = 200
+
+==>  SUCCESS
+
+
+============================
+    Authorization test
+============================
+
+Request done at "/v2"
+| username="alice"
+| password="wonderland"
+
+Expected result = 200
+Actual result   = 200
+
+==>  SUCCESS
+
+
+============================
+    Authorization test
+============================
+
+Request done at "/v1"
+| username="bob"
+| password="builder"
+
+Expected result = 200
+Actual result   = 200
+
+==>  SUCCESS
+
+
+============================
+    Authorization test
+============================
+
+Request done at "/v2"
+| username="bob"
+| password="builder"
+
+Expected result = 403
+Actual result   = 403
+
+==>  SUCCESS
+
+
+Test Content:
+Version: v1, Sentence: 'life is beautiful'
+Expected sentiment: positive, Got score: 0.5994
+Result: SUCCESS
+
+Test Content:
+Version: v1, Sentence: 'that sucks'
+Expected sentiment: negative, Got score: -0.3612
+Result: SUCCESS
+
+Test Content:
+Version: v2, Sentence: 'life is beautiful'
+Expected sentiment: positive, Got score: 0.5994
+Result: SUCCESS
+
+Test Content:
+Version: v2, Sentence: 'that sucks'
+Expected sentiment: negative, Got score: -0.3612
+Result: SUCCESS
+
+Test Authentication:
+User: alice
+Expected: 200, Got: 200
+Result: SUCCESS
+
+Test Authentication:
+User: bob
+Expected: 200, Got: 200
+Result: SUCCESS
+
+Test Authentication:
+User: clementine
+Expected: 403, Got: 403
+Result: SUCCESS
+
+============================
+    Authorization test
+============================
+
+Request done at "/v1"
+| username="alice"
+| password="wonderland"
+
+Expected result = 200
+Actual result   = 200
+
+==>  SUCCESS
+
+
+============================
+    Authorization test
+============================
+
+Request done at "/v2"
+| username="alice"
+| password="wonderland"
+
+Expected result = 200
+Actual result   = 200
+
+==>  SUCCESS
+
+
+============================
+    Authorization test
+============================
+
+Request done at "/v1"
+| username="bob"
+| password="builder"
+
+Expected result = 200
+Actual result   = 200
+
+==>  SUCCESS
+
+
+============================
+    Authorization test
+============================
+
+Request done at "/v2"
+| username="bob"
+| password="builder"
+
+Expected result = 403
+Actual result   = 403
+
+==>  SUCCESS
+
+
+Test Content:
+Version: v1, Sentence: 'life is beautiful'
+Expected sentiment: positive, Got score: 0.5994
+Result: SUCCESS
+
+Test Content:
+Version: v1, Sentence: 'that sucks'
+Expected sentiment: negative, Got score: -0.3612
+Result: SUCCESS
+
+Test Content:
+Version: v2, Sentence: 'life is beautiful'
+Expected sentiment: positive, Got score: 0.5994
+Result: SUCCESS
+
+Test Content:
+Version: v2, Sentence: 'that sucks'
+Expected sentiment: negative, Got score: -0.3612
+Result: SUCCESS

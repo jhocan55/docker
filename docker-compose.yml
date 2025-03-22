@@ -1,0 +1,62 @@
+# version: '3.9'
+services:
+  api:
+    image: datascientest/fastapi:1.0.0
+    container_name: api
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "true"]  
+      interval: 5s
+      retries: 1
+    networks:
+      - test-network
+
+  auth_test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: auth_test
+    environment:
+      LOG: "1"
+    volumes:
+      - ./logs:/app/logs
+    depends_on:
+      api:
+        condition: service_healthy
+    networks:
+      - test-network
+
+  authz_test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: authz_test
+    environment:
+      LOG: "1"
+    volumes:
+      - ./logs:/app/logs
+    depends_on:
+      api:
+        condition: service_healthy
+    networks:
+      - test-network
+
+  content_test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: content_test
+    environment:
+      LOG: "1"
+    volumes:
+      - ./logs:/app/logs
+    depends_on:
+      api:
+        condition: service_healthy
+    networks:
+      - test-network
+
+networks:
+  test-network:
+    driver: bridge
